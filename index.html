@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="main text-center bg-light mx-auto my-5 border border-4 rounded-pill border-dark-subtle "
+    >
+      <h1 class="pt-4">Timer</h1>
+      <div class="d-flex justify-content-center">
+        <h3 class="p-4">&nbsp; Hrs</h3>
+        <h3 class="p-4">Min</h3>
+        <h3 class="p-4">Sec</h3>
+      </div>
+      <div class="d-flex justify-content-center">
+        <h4 id="hrs" class="px-4 ">00</h4>
+        <h5>:&nbsp;&nbsp;&nbsp;</h5>
+        <h4 id="min" class="px-4 ">00</h4>
+        <h5>&nbsp;:&nbsp;&nbsp;</h5>
+        <h4 id="sec" class="px-4 ">00</h4>
+      </div>
+
+      <div class="m-3 pb-4">
+        <button id="startBtn" onclick="startTime()" class="m-1 mt-1 btn btn-outline-primary">
+          Start
+        </button>
+        <button id="stopBtn" onclick="stopTime()" class="m-1 mt-1 btn btn-outline-warning">
+          Stop
+        </button>
+        <button id="resetBtn" onclick="resetTime()" class="m-1 mt-1 btn btn-outline-danger">
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
